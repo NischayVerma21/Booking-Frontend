@@ -1,0 +1,152 @@
+/* .dashboard {
+    background-image: url('../../public/images/mueseumback.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 20px;
+  
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .city-card {
+    flex: 1;
+  }
+  
+  .museum-card {
+    flex: 2;
+  }
+  
+  .chatbot-card {
+    flex: 1;
+  }
+  
+  .city-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .city-item label {
+    margin-left: 8px;
+  }
+  .museum-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .museum-item label {
+    margin-left: 8px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+   */
+   .dashboard {
+    background-image: url('../../public/images/mueseumback.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+/* Responsive Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    height: 40px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* City and Museum Cards */
+.city-card, .museum-card, .chatbot-card {
+    width: 100%;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .dashboard {
+        text-align: center;
+    }
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        height: 30px;
+    }
+}
